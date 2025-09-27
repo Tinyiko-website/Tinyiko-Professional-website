@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nyiko's Professional Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 100px; /* Adjust the size as needed */
+      margin-bottom: 10px;
+    }
+
+    .slogan {
+      font-style: italic;
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background-color: #004080;
+    }
+
+    nav button {
+      background-color: white;
+      color: #004080;
+      border: 2px solid #004080;
+      padding: 10px 16px;
+      margin: 5px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+      background-color: #004080;
+      color: white;
+    }
+
+    .profile-pic {
+      display: block;
+      margin: 20px auto;
+      width: 150px; /* Adjust the size as needed */
+      border-radius: 50%;
+    }
+
+    .quote-bubble {
+      background-color: #e0f7fa;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .resource-button {
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #e0f7fa;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .resource-button h3 {
+      margin-bottom: 10px;
+    }
+
+    .resource-button button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .resource-button button:hover {
+      background-color: #003366;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 600px) {
+      nav button {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+      }
+
+      header img {
+        width: 80px;
+      }
+
+      section {
+        width: 95%;
+        padding: 15px;
+      }
+    }
+
+    .tab-section {
+      display: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    label {
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #003366;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="MAKHUBELA LOGO.png" alt="Logo" class="logo">
+    <h1>Hi, Welcome to My Profile</h1>
+    <p class="slogan">Empowering Education Through Technology</p>
+    <!-- Image Source: Own contribution -->
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <button onclick="showSection('main')"><i class="fas fa-home"></i> Home</button>
+    <button onclick="showSection('cv')"><i class="fas fa-user"></i> CV</button>
+    <button onclick="showSection('resources')"><i class="fas fa-book"></i> CAT Resources</button>
+    <button onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</button>
+  </nav>
+
+  <!-- Main Page -->
+  <div id="main" class="tab-section" style="display: block;">
+    <section id="intro">
+      <h2>SUMMARY</h2>
+      <p>I'm MR. T MAKHUBELA, a 4th year education student at North West University, I'm passionate about teaching and learning new things every day. I major in Computer Applications Technology (CAT) and Life sciences. This website is part of my professional online portfolio. You can explore my resume, CAT resources for learners that I created, and contact form using the buttons above.</p>
+      
+      <!-- Interesting HTML Feature: I used JavaScript to create a dynamic navigation system that allows users to switch between different sections of the profile without reloading the page. -->
+    </section>
+
+    <!-- Personal Picture -->
+    <img src="My Picture.jpg" alt="Tinyiko Makhubela" class="profile-pic">
+    <!-- Image Source: Own contribution -->
+
+    <!-- Quote Bubble -->
+    <div class="quote-bubble">
+      <p><i>“A good education can change anyone. A good teacher can change everything.”</i></p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/tinyiko-makhubela-5bb5a5285" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/share/1BursnQ22j/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/nyikow_cakes?igsh=bnFyNW5ybDIwd3Vo" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Nyiko. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- CV Page -->
+  <div id="cv" class="tab-section">
+    <header>
+      <h1>My Curriculum Vitae</h1>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+      <p>Bachelor of Education (BEd) – Majors in Computer Applications Technology & Life Sciences<br>
+      North-West University | Ongoing</p>
+      <p>National Senior Certificate<br>
+      Soshanguve Secondary School, Pretoria | 2018 – 2020</p>
+
+      <h2>Teaching Experience</h2>
+      <h3>Student Teacher – Life Sciences</h3>
+      <p>Ntsako Secondary School, Soshanguve | 2022 – 2025</p>
+      <ul>
+        <li>Delivered curriculum-based lessons to Grade 10–12 learners</li>
+        <li>Assisted in designing classroom resources and learner assessments</li>
+        <li>Focused on practical activities and exam preparation</li>
+      </ul>
+
+      <h3>Student Teacher – Computer Applications Technology</h3>
+      <p>Soshanguve Secondary School, Pretoria | 2022 – 2025</p>
+      <ul>
+        <li>Facilitated lessons on spreadsheet design, word processing, and file management</li>
+        <li>Promoted computer literacy through CAPS-aligned tasks</li>
+        <li>Encouraged active participation in digital assignments</li>
+      </ul>
+
+      <h3>Teacher Assistant</h3>
+      <p>Ntsako Secondary School, Soshanguve | 2021 – 2022</p>
+      <ul>
+        <li>Supported teachers in daily lesson delivery and classroom management</li>
+        <li>Provided academic support to learners in multiple subjects</li>
+        <li>Gained foundational teaching experience and learner engagement skills</li>
+      </ul>
+
+      <h2>Professional Skills</h2>
+      <ul>
+        <li>Curriculum planning and content delivery</li>
+        <li>ICT integration in education</li>
+        <li>Assessment preparation and marking</li>
+        <li>Classroom management</li>
+        <li>Communication and learner support</li>
+      </ul>
+
+      <h2>Tools & Technologies</h2>
+      <ul>
+        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+        <li>Google Workspace (Docs, Slides, Classroom)</li>
+        <li>Internet-based research and e-learning platforms</li>
+      </ul>
+
+      <h2>Languages</h2>
+      <ul>
+        <li>English – Fluent</li>
+        <li>Sepedi – Fluent</li>
+        <li>Xitsonga – Fluent</li>
+        <li>Setswana – Fluent</li>
+      </ul>
+
+      <h2>References</h2>
+      <ul>
+        <li>Ms L Makhubela - Educator and Mentor – Ntsako Secondary School</li>
+        <li>Mrs F Avrakotos-King - Computer Applications Technology Lecturer – North-West University</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Nyiko. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Resources Page -->
+  <div id="resources" class="tab-section">
+    <header>
+      <h1>CAT Resources</h1>
+    </header>
+
+    <section>
+      <h2>Explore CAT Themes</h2>
+
+      <!-- Solution Development -->
+      <div class="resource-button">
+        <h3>SOLUTION DEVELOPMENT</h3>
+        <a href="https://www.typingclub.com/" target="_blank"><button>Typing Club</button></a>
+        <a href="https://www.siyavula.com/read" target="_blank"><button>Siyavula</button></a>
+      </div>
+
+      <!-- System Technologies -->
+      <div class="resource-button">
+        <h3>SYSTEM TECHNOLOGIES</h3>
+        <a href="https://sites.google.com/brightsparkz.co.za/resource-library/home?authuser=0" target="_blank"><button>BrightSparkz Resource Library</button></a>
+        <a href="https://www.siyavula.com/read" target="_blank"><button>Siyavula</button></a>
+      </div>
+
+      <!-- Network Technologies -->
+      <div class="resource-button">
+        <h3>NETWORK TECHNOLOGIES</h3>
+        <a href="https://www.netacad.com/catalogs/learn" target="_blank"><button>NetAcad</button></a>
+        <a href="https://www.siyavula.com/read" target="_blank"><button>Siyavula</button></a>
+      </div>
+
+      <!-- Internet Technologies -->
+      <div class="resource-button">
+        <h3>INTERNET TECHNOLOGIES</h3>
+        <a href="https://www.siyavula.com/read" target="_blank"><button>Siyavula</button></a>
+        <a href="https://viaafrika.com/wp-content/uploads/2019/07/CAT11-Study-Guide-v3.pdf" target="_blank"><button>Via Afrika Study Guide</button></a>
+      </div>
+
+      <!-- Information Management -->
+      <div class="resource-button">
+        <h3>INFORMATION MANAGEMENT</h3>
+        <a href="https://viaafrika.com/wp-content/uploads/2019/07/CAT11-Study-Guide-v3.pdf" target="_blank"><button>Via Afrika Study Guide</button></a>
+        <a href="https://www.siyavula.com/read" target="_blank"><button>Siyavula</button></a>
+      </div>
+
+      <!-- Social Implications -->
+      <div class="resource-button">
+        <h3>SOCIAL IMPLICATIONS</h3>
+        <a href="https://www.siyavula.com/read" target="_blank"><button>Siyavula</button></a>
+        <a href="https://viaafrika.com/wp-content/uploads/2019/07/CAT11-Study-Guide-v3.pdf" target="_blank"><button>Via Afrika Study Guide</button></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Nyiko. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Contact Page -->
+  <div id="contact" class="tab-section">
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
+    <section>
+      <form action="mailto:38712628@mynwu.ac.za" method="post" enctype="text/plain">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cellphone number">Cellphone Number:</label>
+        <input type="tel" id="cellphoneNumber" name="cellphoneNumber" patten="[0-9]{10}" placeholder="Enter 10-digit cellphone number" required>
+
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Nyiko. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript for Navigation -->
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.tab-section').forEach(function(sec) {
+        sec.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
